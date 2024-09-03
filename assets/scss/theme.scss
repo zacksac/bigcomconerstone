@@ -68,6 +68,8 @@
 @import "common/index"; // 3
 @import "components/components"; // 6
 
+@import "swiper";
+
 
 // Layouts
 // -----------------------------------------------------------------------------
@@ -94,4 +96,22 @@
 body {
     font-family: 'Roboto Condensed';
    
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+.deskshow {
+    display: none;
+}
+.mobshow {
+    display: block !important;
+}
 }
