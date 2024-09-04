@@ -1,3 +1,35 @@
+(function() {
+  var swiper = new Swiper('.swiper1', {
+  // Default parameters
+  slidesPerView: 6,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 2000,
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 6,
+      spaceBetween: 40
+    }
+  }
+})
+
+})();
+
+
+
 if ($(window).width() <= 1024) {
   $(".explore .expaa").click(function(){
     //event.preventDefault();
@@ -37,29 +69,5 @@ $('.explore').mouseenter(function () {
 }
 
 
-var swiper = new Swiper('.swiper1', {
-  // Default parameters
-  slidesPerView: 6,
-  spaceBetween: 10,
-  autoplay: {
-    delay: 2000,
-  },
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 6,
-      spaceBetween: 40
-    }
-  }
-})
+
+
